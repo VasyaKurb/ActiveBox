@@ -38,7 +38,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
         </div>
         <div class="desc-btn">
-          <button>Find Out More</button>
+          <button id="descBtn">Find Out More</button>
         </div>
       </div>
     </section>
@@ -253,7 +253,7 @@
         <div class="download-title">Are You Ready to Start? Download Now For Free!</div>
         <div class="download-text">Fusce dapibus, tellus ac cursus commodo</div>
         <div class="download-btn">
-          <button type="button">Download Here</button>
+          <button class="download-button" type="button">Download Here</button>
         </div>
       </div>
     </div>
@@ -288,5 +288,27 @@
       <span>Copyright © 2015 ActiveBox. All Rights Reserved Made with <span class="white-text"><span class="serdce">❤</span> by Kamal Chaneman</span></span>
     </div>
   </div>
+  <div class="wrapper-modal">
+     <div id="overlay"></div>
+     <div id="modal-window">
+       <button id="btn-close">
+         <img src="img/close.svg">
+       </button>
+       <div class="content">
+           <div class="popup-title">
+            Thank for download the file!
+          </div>
+          <div class="popup-waring">
+            Warning! This is not a full version. You can buy the full one by clicking on the link:
+          </div>
+          <div class="popup-btn">
+            <button class="buy-btn">BUY FULL VERSION!</button>
+          </div>
+          <div class="popup-price">9.99$</div>
+       </div>
+     </div>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -341,6 +341,10 @@ body {
 	background-color: #fff;
 }
 
+.wrapper-modal.active {
+	display: block;
+}
+
 .download-section {
 	display: flex;
 	flex-direction: column;
@@ -483,9 +487,121 @@ body {
 	color: #fff;
 }
 
+.header .show-menu {
+	display: block;
+	position: absolute;
+	width: 50%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 40px 20px 20px 40px;
+}
+
+.header .show-menu li {
+	margin-bottom: 10px;
+	border: none;
+}
+
+.header .show-menu li {
+	margin-bottom: 10px;
+	border-color: transparent;
+}
+
+.flex-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#btn-close {
+	display: flex;
+	justify-content: flex-end;
+	background: none;
+	border: none;
+	position: relative;
+	left: 90%;
+	top: 5%;
+}
+.wrapper-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.content {
+	padding-top: 30px;
+}
+
+#modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 350px;
+    z-index: 2;
+    background-color: #090042;
+	border-radius: 40px;
+}
+
+.popup-title {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+
+.popup-waring {
+	font-weight: 600;
+    font-size: 16px;
+	color: #F00000;
+	padding: 60px 0;
+	font-weight: 700;
+	width: 500px;
+	text-align: center;
+}
+
+.popup-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.buy-btn {
+	padding: 15px 50px;
+	color: #090042;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 10px;
+}
+
+.popup-price {
+	color: #F00000;
+	text-align: center;
+	padding-top: 25px;
+	font-weight: 900;
+	font-size: 20px;
+}
+
 @media screen and (max-width: 1125px) {
 	.container {
 		width: 950px
+	}
+
+	.slider-img {
+		display: none;
 	}
 }
 
@@ -517,6 +633,21 @@ body {
 @media screen and (max-width: 880px) {
 	.container {
 		width: 650px
+	}
+
+	#modal-window {
+		width: 300px;
+	}
+
+	#btn-close {
+		left: 85%;
+	}
+
+	.popup-waring {
+		width: 250px;
+		padding-left: 47px;
+		padding-top: 45px;
+		padding-bottom: 45px;
 	}
 
 	.desc-title {
